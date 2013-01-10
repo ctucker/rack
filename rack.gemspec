@@ -18,12 +18,13 @@ Also see http://rack.rubyforge.org.
 EOF
 
   s.files           = Dir['{bin/*,contrib/*,example/*,lib/**/*}'] +
-                        %w(COPYING KNOWN-ISSUES rack.gemspec RDOX README SPEC)
+["rack.gemspec"]
+#                        %w(COPYING KNOWN-ISSUES rack.gemspec RDOX README SPEC)
   s.bindir          = 'bin'
   s.executables     << 'rackup'
   s.require_path    = 'lib'
-  s.has_rdoc        = true
-  s.extra_rdoc_files = ['README', 'SPEC', 'KNOWN-ISSUES']
+#  s.has_rdoc        = true
+#  s.extra_rdoc_files = ['README', 'SPEC', 'KNOWN-ISSUES']
   s.test_files      = Dir['test/{test,spec}_*.rb']
 
   s.author          = 'Christian Neukirchen'
